@@ -11,10 +11,6 @@
 -- student: names and emails
 -- review: all
 
--- This drop can be removed after running once
-
-DROP TABLE IF EXISTS PropertyLandlord;
-
 -- Drop outdated RentScout tables if they exist
 
 DROP TABLE IF EXISTS Review;
@@ -71,6 +67,7 @@ INSERT INTO Student(email) VALUES ('qne12@calvin.edu');
 INSERT INTO Student(email) VALUES ('kpl8@calvin.edu');
 INSERT INTO Student(email) VALUES ('yyt7@calvin.edu');
 INSERT INTO Student(email) VALUES ('asd123@calvin.edu');
+INSERT INTO Student(email) VALUES ('jtlundberg43@gmail.com');
 
 INSERT INTO Landlord VALUES (1, 'Erik Kraayeveld', 'https://www.kraayeveldproperties.com/', '616-123-4567', 'contact@kraayeveldproperties.com');
 INSERT INTO Landlord VALUES (2, 'Cathy Sevigny', null, null, null);
@@ -81,19 +78,19 @@ INSERT INTO Landlord VALUES (6, 'Aiesha Reynolds', null, '616-555-5555', 'aiesha
 INSERT INTO Landlord VALUES (7, 'HCW Realty', null, null, null);
 INSERT INTO Landlord VALUES (8, 'Rental Properties Consultant LLC', null, null, null);
 
-INSERT INTO Property VALUES (1, 1, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/1610%20Rossman.png', '1610 Rossman Ave, Grand Rapids MI, 49507', 5, 2.5, 2200, 2.2, 0.6, true);
-INSERT INTO Property VALUES (2, 1, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/1024%20Burton.png', '1024 Burton St SE, Grand Rapids, MI 49507', 4, 2, 1750, 2.8, 0.3, false);
-INSERT INTO Property VALUES (3, 1, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/1421%20Sherman.png', '1421 Sherman St SE, Grand Rapids, MI 49506', 5, 2, 2000, 2.8, 0.4, false);
-INSERT INTO Property VALUES (4, 1, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/249%20Alger.png', '249 Alger St SE, Grand Rapids, MI 49507', 5, 2, 1950, 3.8, 0.3, false);
-INSERT INTO Property VALUES (5, 1, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/1314%20Boston.png', '1314 Boston St SE, Grand Rapids, MI 40507', 4, 2, 1700, 2.5, 0.2, true);
-INSERT INTO Property VALUES (6, 2, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/118%20National.png', '118 National Ave SW, Grand Rapids, MI 49504', 2, 1, 1475, 5.4, 0.2, true);
-INSERT INTO Property VALUES (7, 3, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/2010%20Deciduous.png', '2010 Deciduous Dr, Grand Rapids MI 49505', 2, 3, 2280, 4.8, 0.7, false);
-INSERT INTO Property VALUES (8, 4, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/2142%20Stafford.png', '2142 Stafford Ave SW, Grand Rapids, MI 49507', 3, 1, 2000, 4.5, 0.3, true);
-INSERT INTO Property VALUES (9, 4, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/3476%20Bluebird.png', '3476 Bluebird Ave SW, Wyoming MI, 49519', 3, 1, 2100, 7.4, 0.3, false);
-INSERT INTO Property VALUES (10, 5, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/1126%20Merrifield.png', '1126 Merrifield St SE, Grand Rapids, MI 49507', 4, 1, 1895, 2.7, 0.2, false);
-INSERT INTO Property VALUES (11, 6, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/636%20Innes.png', '636 Innes St NE, Grand Rapids, MI 49503', 2, 1, 1000, 4.2, 0.4, true);
-INSERT INTO Property VALUES (12, 7, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/471%20Emerald.png', '471 Emerald Ave NE, Grand Rapids, MI 49503', 4, 1, 1900, 4.2, 0.2, false);
-INSERT INTO Property VALUES (13, 8, 'https://github.com/calvin-cs262-fall2024-teamG/Project/blob/main/StreetView%20Pics/1020%20Sigsbee.png', '1020 Sigsbee St SE, Grand Rapids, MI 49506', 5, 2, 3200, 3.3, 0.1, true);
+INSERT INTO Property VALUES (1, 1, 'https://media.discordapp.net/attachments/715308386941403141/1318663633202315264/1610_Rossman.png?ex=676324b5&is=6761d335&hm=b02870c8f8a258ec1d27cafab912964d79057328356cba1315d5393625f6a7a1&=&format=webp&quality=lossless&width=449&height=392', '1610 Rossman Ave, Grand Rapids MI, 49507', 5, 2.5, 2200, 2.2, 0.6, true);
+INSERT INTO Property VALUES (2, 1, 'https://media.discordapp.net/attachments/715308386941403141/1318663634850676796/1024_Burton.png?ex=676324b6&is=6761d336&hm=da3d3994d457acd3337ab9a6b790035381ca0a886dffa2c76d890f08c533d604&=&format=webp&quality=lossless&width=640&height=584', '1024 Burton St SE, Grand Rapids, MI 49507', 4, 2, 1750, 2.8, 0.3, false);
+INSERT INTO Property VALUES (3, 1, 'https://media.discordapp.net/attachments/715308386941403141/1318663633487659153/1421_Sherman.png?ex=676324b5&is=6761d335&hm=567fa0b6c7a9bbb3f64bc9ce8354a7bf52881a342e8083ff7843d500a85fd43f&=&format=webp&quality=lossless&width=473&height=473', '1421 Sherman St SE, Grand Rapids, MI 49506', 5, 2, 2000, 2.8, 0.4, false);
+INSERT INTO Property VALUES (4, 1, 'https://media.discordapp.net/attachments/715308386941403141/1318663632208396458/249_Alger.png?ex=676324b5&is=6761d335&hm=a872e6b1f91bc92e3657d17b0e63c6c037c09a5162d3750793f0323c49770120&=&format=webp&quality=lossless&width=473&height=473', '249 Alger St SE, Grand Rapids, MI 49507', 5, 2, 1950, 3.8, 0.3, false);
+INSERT INTO Property VALUES (5, 1, 'https://media.discordapp.net/attachments/715308386941403141/1318663633848238161/1314_Boston.png?ex=676324b5&is=6761d335&hm=a8cac8f3f333a5aa1d8bf77d82c2de6e21bcd9973a5609c06605430075845faa&=&format=webp&quality=lossless&width=471&height=433', '1314 Boston St SE, Grand Rapids, MI 40507', 4, 2, 1700, 2.5, 0.2, true);
+INSERT INTO Property VALUES (6, 2, 'https://media.discordapp.net/attachments/715308386941403141/1318663634129387581/118_National.png?ex=676324b5&is=6761d335&hm=614cad3e760c6abbf7eb14c658d4c3aac52b8c9d1383b13bec7ae1113906e4b5&=&format=webp&quality=lossless&width=410&height=430    ', '118 National Ave SW, Grand Rapids, MI 49504', 2, 1, 1475, 5.4, 0.2, true);
+INSERT INTO Property VALUES (7, 3, 'https://media.discordapp.net/attachments/715308386941403141/1318663632883810437/2010_Deciduous.png?ex=676324b5&is=6761d335&hm=f26390a8efbee0bef68cf689077ab8c95098bdf64b8deb385ad58dd92601d0c3&=&format=webp&quality=lossless&width=545&height=548', '2010 Deciduous Dr, Grand Rapids MI 49505', 2, 3, 2280, 4.8, 0.7, false);
+INSERT INTO Property VALUES (8, 4, 'https://media.discordapp.net/attachments/715308386941403141/1318663632556527646/2142_Stafford.png?ex=676324b5&is=6761d335&hm=b2b50e1f7f059bb4b3ef0c3b5ae01a44a2832f63bd4e1d9315ce3d26c0f7360a&=&format=webp&quality=lossless&width=346&height=367', '2142 Stafford Ave SW, Grand Rapids, MI 49507', 3, 1, 2000, 4.5, 0.3, true);
+INSERT INTO Property VALUES (9, 4, 'https://media.discordapp.net/attachments/715308386941403141/1318663589598335057/3476_Bluebird.png?ex=676324ab&is=6761d32b&hm=7993ee63f4aab08eef5c1ac7b88f271a645e37bf12a0dd69745fe7b44090ec9f&=&format=webp&quality=lossless&width=403&height=369', '3476 Bluebird Ave SW, Wyoming MI, 49519', 3, 1, 2100, 7.4, 0.3, false);
+INSERT INTO Property VALUES (10, 5, 'https://media.discordapp.net/attachments/715308386941403141/1318663634565730415/1126_Merrifield.png?ex=676324b6&is=6761d336&hm=2d8a6a40c5fd9c196f519f8584e8773c046e6e4d09f2d43ba033ffb64c920fc7&=&format=webp&quality=lossless&width=498&height=443', '1126 Merrifield St SE, Grand Rapids, MI 49507', 4, 1, 1895, 2.7, 0.2, false);
+INSERT INTO Property VALUES (11, 6, 'https://media.discordapp.net/attachments/715308386941403141/1318663588994355200/636_Innes.png?ex=676324ab&is=6761d32b&hm=04f167cc30ae5f0324e61ca017acbd87466d09ce7d366c5b16095524e2de0481&=&format=webp&quality=lossless&width=537&height=496', '636 Innes St NE, Grand Rapids, MI 49503', 2, 1, 1000, 4.2, 0.4, true);
+INSERT INTO Property VALUES (12, 7, 'https://media.discordapp.net/attachments/715308386941403141/1318663589283758250/471_Emerald.png?ex=676324ab&is=6761d32b&hm=d3594d38c7e3fe13233f6f7594c9565da03c8c1b6c7bb49240f9db64dccd3f7d&=&format=webp&quality=lossless&width=410&height=369', '471 Emerald Ave NE, Grand Rapids, MI 49503', 4, 1, 1900, 4.2, 0.2, false);
+INSERT INTO Property VALUES (13, 8, 'https://media.discordapp.net/attachments/715308386941403141/1318663631755415714/1020_Sigsbee.png?ex=676324b5&is=6761d335&hm=ad6a3f39dde4118057b986ca532646a950e5734743468624e5de77c42e26b322&=&format=webp&quality=lossless&width=337&height=334', '1020 Sigsbee St SE, Grand Rapids, MI 49506', 5, 2, 3200, 3.3, 0.1, true);
 
 -- To generate demo reviews to show the system working, we will generate
 -- 11 reviews for property 1, 10 for property 2, 9 for property 3, and so on
